@@ -19,7 +19,7 @@ class CreateQuestionsTable extends Migration
             $table->string('slug');
             $table->string('body');
             $table->integer('category_id')->unsigned();
-            $table->timestamps()->unsigned();
+            $table->timestamps();
         });
     }
 
