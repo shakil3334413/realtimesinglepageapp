@@ -8,7 +8,17 @@ require('./bootstrap');
 require('admin-lte');
 
 window.Vue = require('vue');
+import Vue from 'vue'
+// vue route
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+const router = new VueRouter({
+    mode: 'history',
+    routes
+  })
+  const routes = [
 
+  ]
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -30,4 +40,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    router
 });
