@@ -11,14 +11,12 @@ window.Vue = require('vue');
 import Vue from 'vue'
 // vue route
 import VueRouter from 'vue-router'
+import {routes} from './routes';
 Vue.use(VueRouter)
 const router = new VueRouter({
     mode: 'history',
     routes
   })
-  const routes = [
-
-  ]
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -30,7 +28,7 @@ const router = new VueRouter({
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('main-component', require('./components/admin/AdminMaster.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

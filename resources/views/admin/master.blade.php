@@ -62,7 +62,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <span class="badge badge-danger navbar-badge">3</span>
         </a>
         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-          <a href="#" class="dropdown-item">
+          <route- href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
             <img src="{{asset('admin/images/admin.png')}}" alt="Admin" class="img-size-50 mr-3 img-circle">
@@ -157,10 +157,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <router-link to="/category-list" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category</p>
-                </a>
+                </router-link>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -188,13 +188,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content -->
+        <main-component></main-component>
   </div>
   <!-- /.content-wrapper -->
 
